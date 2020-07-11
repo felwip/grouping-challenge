@@ -1,3 +1,25 @@
+// The task is to write a function that takes in two arguments (number of people and number of groups) and returns the number of possible distributions of the people into the amount of groups. Return value should be a number.
+
+// APPROACH TO TRANSLATE PYTHON CODE
+
+function findValidGroups(people, groups, c = 1) {
+  if (groups < 1) {
+    throw new Error("Please give a valid number of groups.");
+  } else if (groups == 1) {
+    return groups;
+  } else if (groups > people) {
+    throw new Error(
+      "There must be more people than groups! Please check for correct input."
+    );
+  } else {
+    for (let i = 1; i <= people; i++) {
+      findValidGroups.forEach((element) => {});
+    }
+  }
+}
+
+// FIRST APPROACH AT OTS
+
 const grouping = function (people, groups) {
   let result = 0;
   let testArray = [];
@@ -46,6 +68,8 @@ const grouping = function (people, groups) {
 console.log(grouping(4, 2));
 // console.log(grouping(4, 5));
 
+// EXAMPLES HOW THE FUNCTION SHOULD WORK
+
 // grouping(4, 2) {
 //   let group1 = [1, 3];
 //   let group2 = [2, 2];
@@ -73,6 +97,9 @@ console.log(grouping(4, 2));
 //   let group7 = [2, 4, 4];
 //   let group8 = [3, 3, 4];
 // }
+
+// NEW APPROACH
+
 const grouping2 = function (people, groups) {
   if (people % groups == 0) {
   }
