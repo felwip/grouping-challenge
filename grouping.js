@@ -44,16 +44,16 @@ function CalculateNumber(numBoxes, numBalls) {
   return answer;
 }
 
-const boxes = 4;
-const balls = 8;
-const msg =
-  "Boxes: " +
-  boxes +
-  "; Balls: " +
-  balls +
-  "; Posibilities: " +
-  CalculateNumber(boxes, balls);
-console.log(msg);
+// const boxes = 4;
+// const balls = 8;
+// const msg =
+//   "Boxes: " +
+//   boxes +
+//   "; Balls: " +
+//   balls +
+//   "; Posibilities: " +
+//   CalculateNumber(boxes, balls);
+// console.log(msg);
 
 // APPROACH TO TRANSLATE PYTHON CODE
 
