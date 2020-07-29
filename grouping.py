@@ -13,13 +13,18 @@ def partition(people, groups, l=1):
         for i in range(l, people + 1):
             for result in partition(people - i, groups - 1, i):
                 yield (i,) + result
-                print(i)
-                print(people - i)
+                
 
 
 cases = (
-    (10, 3),
-    (8, 4),
+    (3, 1),
+    (4, 2),
+    (5, 3),
+    (6, 4),
+    (4, 1),
+    (5, 2),
+    (6, 3),
+    (7, 4),
 )
 
 for c in cases:
